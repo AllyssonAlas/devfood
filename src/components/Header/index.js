@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from 'react'
+import React, {useContext} from 'react'
 import {NavLink} from 'react-router-dom'
 import {GoSignOut} from 'react-icons/go'
 
@@ -22,7 +22,7 @@ export default function Header() {
       {Object.keys(user.state).length !== 0 && (
         <>
           <div>
-            <NavLink to={'#'}>Home </NavLink> | <NavLink to={'#'}>Minhas Receitas</NavLink> |{' '}
+            <NavLink to={'#'}>Receitas </NavLink> | <NavLink to={'#'}>Minhas Receitas</NavLink> |{' '}
             <NavLink to={'#'}>Adicionar Nova Receita</NavLink>
           </div>
 
