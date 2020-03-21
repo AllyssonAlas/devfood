@@ -1,5 +1,5 @@
 import React from 'react'
 
-export default function Recipes() {
-  return <h1>Recipes</h1>
+export default function Home() {
+  return <h1>Home</h1>
 }

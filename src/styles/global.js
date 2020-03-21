@@ -10,5 +10,6 @@ export default createGlobalStyle`
 
   html, body, #root {
     min-height: 100%;
+    font-size: 10px;
   }
 `
