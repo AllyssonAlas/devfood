@@ -110,7 +110,7 @@
       <workItem from="1584794715680" duration="1521000" />
       <workItem from="1584796247094" duration="1312000" />
       <workItem from="1584797580979" duration="3295000" />
-      <workItem from="1584811257322" duration="7045000" />
+      <workItem from="1584811257322" duration="17138000" />
     </task>
     <servers />
   </component>
@@ -130,22 +130,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584790110843" />
-    <state width="1344" height="365" key="GridCell.Tab.0.bottom" timestamp="1584816442341">
+    <state width="1344" height="365" key="GridCell.Tab.0.bottom" timestamp="1584826229349">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="365" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584816442341" />
-    <state width="1344" height="365" key="GridCell.Tab.0.center" timestamp="1584816442341">
+    <state width="1344" height="365" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584826229349" />
+    <state width="1344" height="365" key="GridCell.Tab.0.center" timestamp="1584826229349">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="365" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584816442341" />
-    <state width="1344" height="365" key="GridCell.Tab.0.left" timestamp="1584816442341">
+    <state width="1344" height="365" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584826229349" />
+    <state width="1344" height="365" key="GridCell.Tab.0.left" timestamp="1584826229349">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="365" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584816442341" />
-    <state width="1344" height="365" key="GridCell.Tab.0.right" timestamp="1584816442341">
+    <state width="1344" height="365" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584826229349" />
+    <state width="1344" height="365" key="GridCell.Tab.0.right" timestamp="1584826229349">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="365" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584816442341" />
+    <state width="1344" height="365" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584826229349" />
     <state width="1344" height="368" key="GridCell.Tab.1.bottom" timestamp="1584767320045">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -170,10 +170,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1584794734548" />
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1584825596888">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1584825596888" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1584816774805">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1584816774805" />
+    <state width="600" height="440" key="javadoc.popup" timestamp="1584823934448">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="600" height="440" key="javadoc.popup/0.0.1366.728@0.0.1366.728" timestamp="1584823934448" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/devfood$Debug_Application.dat" NAME="Debug Application Coverage Results" MODIFIED="1584767322425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

@@ -43,7 +43,7 @@ export const Form = styled.form`
   }
 
   button {
-    background-color: rgb(255, 115, 0);
+    background-color: rgba(255, 115, 0, 1);
     border: 0;
     border-radius: 0.4rem;
     color: rgba(255, 255, 255, 1);

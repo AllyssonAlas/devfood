@@ -1,9 +1,10 @@
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react'
 import {useHistory} from 'react-router-dom'
 import {toast} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 import {authenticate} from '../../services/auth'
+import {store} from '../../components/UserProvider'
 
 import {Container, Form} from './styles'
 
@@ -11,6 +12,8 @@ export default function Auth() {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const history = useHistory()
+  const user = useContext(store)
+  const {dispatch} = user
 
   async function handleSubmit(e) {
     e.preventDefault()
@@ -23,6 +26,8 @@ export default function Auth() {
       }
 
       const user = await authenticate(username, password)
+
+      dispatch({type: 'LOGIN', payload: user.data})
 
       if (!user) {
         throw new Error()
@@ -43,7 +48,7 @@ export default function Auth() {
         <span>Email</span>
         <input
           placeholder={'exemplo@exemplo.com'}
-          type={'text'}
+          type={'email'}
           value={username}
           onChange={e => setUsername(e.target.value)}
         />
