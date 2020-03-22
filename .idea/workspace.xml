@@ -1,43 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ccab0e0-bd7b-4eef-8360-e7821e277dd5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/MyRecipes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/MyRecipes/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/NewRecipe/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/NewRecipe/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="3e4e0d2f-fdeb-40a9-bcbd-a82ffd50127c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/devfood.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/eslintPlugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UserProvider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserProvider/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageViewManager">
-    <option name="myElementSize" value="260" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTTP Request" />
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1ZP6B3VrWmvekMwsbbTHSsv7ruU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1ZUiSabl6js1TdvqPcirrhCKPdx" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -46,163 +27,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-repositorios-github" />
-    <property name="nodejs_interpreter_path" value="node" />
-    <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="F:\Developer\React\devfood\node_modules\prettier" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Developer\React\devfood\src\components\Store" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JavaScript Debug.Debug Application">
-    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
-      <method v="2" />
-    </configuration>
-    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="npm.start" />
-        <item itemvalue="npm.build" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7ccab0e0-bd7b-4eef-8360-e7821e277dd5" name="Default Changelist" comment="" />
-      <created>1584728242596</created>
+      <changelist id="3e4e0d2f-fdeb-40a9-bcbd-a82ffd50127c" name="Default Changelist" comment="" />
+      <created>1584900073228</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1584728242596</updated>
-      <workItem from="1584728244097" duration="1211000" />
-      <workItem from="1584729469441" duration="1418000" />
-      <workItem from="1584740378723" duration="4237000" />
-      <workItem from="1584763871195" duration="4097000" />
-      <workItem from="1584789581141" duration="1652000" />
-      <workItem from="1584791252760" duration="3447000" />
-      <workItem from="1584794715680" duration="1521000" />
-      <workItem from="1584796247094" duration="1312000" />
-      <workItem from="1584797580979" duration="3295000" />
-      <workItem from="1584811257322" duration="18414000" />
-      <workItem from="1584829785949" duration="16538000" />
-      <workItem from="1584848077692" duration="5089000" />
-      <workItem from="1584895502600" duration="4340000" />
+      <updated>1584900073228</updated>
+      <workItem from="1584900074760" duration="6000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584729023631">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584729023631" />
-    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1584898477865">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1584898477865" />
-    <state x="348" y="135" key="EditFileWatcherDialog" timestamp="1584729659786">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="348" y="135" key="EditFileWatcherDialog/0.0.1366.728@0.0.1366.728" timestamp="1584729659786" />
-    <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1584790110843">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584790110843" />
-    <state width="1344" height="364" key="GridCell.Tab.0.bottom" timestamp="1584899822750">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1344" height="364" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584899822750" />
-    <state width="1344" height="364" key="GridCell.Tab.0.center" timestamp="1584899822749">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1344" height="364" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584899822749" />
-    <state width="1344" height="364" key="GridCell.Tab.0.left" timestamp="1584899822749">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1344" height="364" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584899822749" />
-    <state width="1344" height="364" key="GridCell.Tab.0.right" timestamp="1584899822749">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1344" height="364" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584899822749" />
-    <state width="1344" height="368" key="GridCell.Tab.1.bottom" timestamp="1584767320045">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1344" height="368" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584767320045" />
-    <state width="1344" height="368" key="GridCell.Tab.1.center" timestamp="1584767320045">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1344" height="368" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1584767320045" />
-    <state width="1344" height="368" key="GridCell.Tab.1.left" timestamp="1584767320045">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1344" height="368" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1584767320045" />
-    <state width="1344" height="368" key="GridCell.Tab.1.right" timestamp="1584767320045">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1344" height="368" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1584767320045" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1584896654393">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584896654393" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1584851253399">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1584851253399" />
-    <state x="-243" y="-30" width="1373" height="661" maximized="true" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1584898477865">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="-243" y="-30" width="1373" height="661" maximized="true" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1584898477865" />
-    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1584899267272">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1584899267272" />
-    <state x="490" y="274" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584851570325">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="490" y="274" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1584851570325" />
-    <state width="600" height="440" key="javadoc.popup" timestamp="1584844270841">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="600" height="440" key="javadoc.popup/0.0.1366.728@0.0.1366.728" timestamp="1584844270841" />
-    <state x="339" y="157" key="run.anything.popup" timestamp="1584849166168">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1584849166168" />
-    <state x="4" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1584838154848">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="4" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1584838154848" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/devfood$Debug_Application.dat" NAME="Debug Application Coverage Results" MODIFIED="1584767322425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
