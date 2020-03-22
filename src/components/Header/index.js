@@ -22,12 +22,13 @@ export default function Header() {
       {Object.keys(user.state).length !== 0 && (
         <>
           <div>
-            <NavLink to={'#'}>Receitas </NavLink> | <NavLink to={'#'}>Minhas Receitas</NavLink> |{' '}
-            <NavLink to={'#'}>Adicionar Nova Receita</NavLink>
+            <NavLink to={'/home'}>Receitas </NavLink>
+            <NavLink to={'/myRecipes'}>Minhas Receitas</NavLink>
+            <NavLink to={'/newRecipe'}>Adicionar Nova Receita</NavLink>
           </div>
 
           <div>
-            <p> Allysson</p>
+            <p>Allysson</p>
             <NavLink to={'/'} onClick={() => handleLogout()}>
               <GoSignOut size={20} />
             </NavLink>
