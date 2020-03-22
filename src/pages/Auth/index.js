@@ -3,10 +3,11 @@ import {useHistory} from 'react-router-dom'
 import {toast} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
+import PageContainer from '../../components/PageContainer'
 import {authenticate} from '../../services/auth'
 import {store} from '../../components/UserProvider'
 
-import {Container, Form} from './styles'
+import {Form} from './styles'
 
 export default function Auth() {
   const [username, setUsername] = useState('')
@@ -42,7 +43,7 @@ export default function Auth() {
   }
 
   return (
-    <Container>
+    <PageContainer>
       <h1>Entre com seus dados</h1>
       <Form onSubmit={handleSubmit}>
         <span>Email</span>
@@ -57,6 +58,6 @@ export default function Auth() {
 
         <button type={'submit'}> Login </button>
       </Form>
-    </Container>
+    </PageContainer>
   )
 }

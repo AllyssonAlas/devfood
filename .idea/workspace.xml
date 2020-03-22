@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e4e0d2f-fdeb-40a9-bcbd-a82ffd50127c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/devfood.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/eslintPlugin.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Auth/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Auth/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +30,27 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="F:\Developer\React\devfood\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -41,10 +63,47 @@
       <option name="presentableId" value="Default" />
       <updated>1584900073228</updated>
       <workItem from="1584900074760" duration="6000" />
+      <workItem from="1584906514389" duration="382000" />
+      <workItem from="1584907100763" duration="46000" />
+      <workItem from="1584907149462" duration="8113000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="348" y="135" key="EditFileWatcherDialog" timestamp="1584907232504">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="348" y="135" key="EditFileWatcherDialog/0.0.1366.728@0.0.1366.728" timestamp="1584907232504" />
+    <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1584907144437">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584907144437" />
+    <state width="646" height="151" key="GridCell.Tab.0.bottom" timestamp="1584915515489">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="646" height="151" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584915515489" />
+    <state width="646" height="151" key="GridCell.Tab.0.center" timestamp="1584915515489">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="646" height="151" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584915515489" />
+    <state width="646" height="151" key="GridCell.Tab.0.left" timestamp="1584915515489">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="646" height="151" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584915515489" />
+    <state width="646" height="151" key="GridCell.Tab.0.right" timestamp="1584915515489">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="646" height="151" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584915515489" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1584907256270">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584907256270" />
+    <state width="600" height="440" key="javadoc.popup" timestamp="1584911549693">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="600" height="440" key="javadoc.popup/0.0.1366.728@0.0.1366.728" timestamp="1584911549693" />
   </component>
 </project>
