@@ -14,10 +14,8 @@ export default function Home() {
 
   useEffect(() => {
     dispatch({type: 'REFRESH'})
-
     async function getRecipes() {
       const recipesRequest = await api.get('/recipe')
-
       setRecipes(recipesRequest.data)
     }
 
@@ -28,7 +26,6 @@ export default function Home() {
       <h1>Home</h1>
       <div>
         {recipes.map(item => {
-          console.log(item)
           return (
             <RecipeCard key={item.id}>
               <h2>{item.title}</h2>

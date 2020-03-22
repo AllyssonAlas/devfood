@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ccab0e0-bd7b-4eef-8360-e7821e277dd5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/PageContainer/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/MyRecipes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/MyRecipes/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/NewRecipe/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/NewRecipe/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UserProvider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserProvider/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +110,9 @@
       <workItem from="1584796247094" duration="1312000" />
       <workItem from="1584797580979" duration="3295000" />
       <workItem from="1584811257322" duration="18414000" />
-      <workItem from="1584829785949" duration="4237000" />
+      <workItem from="1584829785949" duration="16538000" />
+      <workItem from="1584848077692" duration="5089000" />
+      <workItem from="1584895502600" duration="3839000" />
     </task>
     <servers />
   </component>
@@ -119,6 +124,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584729023631" />
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1584898477865">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1584898477865" />
     <state x="348" y="135" key="EditFileWatcherDialog" timestamp="1584729659786">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -127,22 +136,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584790110843" />
-    <state width="1344" height="365" key="GridCell.Tab.0.bottom" timestamp="1584830104505">
+    <state width="1344" height="364" key="GridCell.Tab.0.bottom" timestamp="1584898481524">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="365" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584830104505" />
-    <state width="1344" height="365" key="GridCell.Tab.0.center" timestamp="1584830104504">
+    <state width="1344" height="364" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584898481524" />
+    <state width="1344" height="364" key="GridCell.Tab.0.center" timestamp="1584898481523">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="365" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584830104504" />
-    <state width="1344" height="365" key="GridCell.Tab.0.left" timestamp="1584830104504">
+    <state width="1344" height="364" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584898481523" />
+    <state width="1344" height="364" key="GridCell.Tab.0.left" timestamp="1584898481523">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="365" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584830104504" />
-    <state width="1344" height="365" key="GridCell.Tab.0.right" timestamp="1584830104505">
+    <state width="1344" height="364" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584898481523" />
+    <state width="1344" height="364" key="GridCell.Tab.0.right" timestamp="1584898481524">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="365" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584830104505" />
+    <state width="1344" height="364" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584898481524" />
     <state width="1344" height="368" key="GridCell.Tab.1.bottom" timestamp="1584767320045">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -159,26 +168,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1344" height="368" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1584767320045" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1584729662082">
+    <state x="184" y="0" key="SettingsEditor" timestamp="1584896654393">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584729662082" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1584794734548">
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584896654393" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1584851253399">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1584794734548" />
-    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1584825596888">
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1584851253399" />
+    <state x="-243" y="-30" width="1373" height="661" maximized="true" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1584898477865">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1584825596888" />
-    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1584816774805">
+    <state x="-243" y="-30" width="1373" height="661" maximized="true" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1584898477865" />
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1584899267272">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1584816774805" />
-    <state width="600" height="440" key="javadoc.popup" timestamp="1584823934448">
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1584899267272" />
+    <state x="490" y="274" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584851570325">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="600" height="440" key="javadoc.popup/0.0.1366.728@0.0.1366.728" timestamp="1584823934448" />
+    <state x="490" y="274" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1584851570325" />
+    <state width="600" height="440" key="javadoc.popup" timestamp="1584844270841">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="600" height="440" key="javadoc.popup/0.0.1366.728@0.0.1366.728" timestamp="1584844270841" />
+    <state x="339" y="157" key="run.anything.popup" timestamp="1584849166168">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1584849166168" />
+    <state x="4" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1584838154848">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="4" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1584838154848" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/devfood$Debug_Application.dat" NAME="Debug Application Coverage Results" MODIFIED="1584767322425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
