@@ -18,10 +18,6 @@ export const Container = styled.header`
       font-size: 2rem;
       color: rgb(20, 116, 75);
     }
-    br {
-      height: 20rem;
-      background-color: gold;
-    }
   }
 
   div {

@@ -3,10 +3,11 @@ import styled from 'styled-components'
 const PageContainer = styled.div`
   display: flex;
   flex: 1;
-  justify-content: center;
+  justify-content: space-around;
   padding: 1rem;
   background-color: rgb(220, 220, 220, 1);
   flex-direction: column;
+  min-height: 40rem;
 
   h1 {
     display: block;

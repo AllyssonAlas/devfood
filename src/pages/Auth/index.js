@@ -1,23 +1,28 @@
 import React, {useState, useContext} from 'react'
 import {useHistory} from 'react-router-dom'
 import {toast} from 'react-toastify'
+import {FaSpinner} from 'react-icons/fa'
+
 import 'react-toastify/dist/ReactToastify.css'
 
 import PageContainer from '../../components/PageContainer'
 import {authenticate} from '../../services/auth'
 import {store} from '../../components/UserProvider'
 
-import {Form} from './styles'
+import {Form, SubmitButton} from './styles'
 
 export default function Auth() {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
+  const [loading, setLoading] = useState(false)
   const history = useHistory()
   const user = useContext(store)
   const {dispatch} = user
 
   async function handleSubmit(e) {
     e.preventDefault()
+
+    setLoading(true)
 
     try {
       if (!username || !password) {
@@ -36,9 +41,11 @@ export default function Auth() {
 
       history.push('home')
     } catch (err) {
-      return toast.error('Usuário não existe', {
+      toast.error('Usuário não existe', {
         position: toast.POSITION.TOP_CENTER,
       })
+    } finally {
+      setLoading(false)
     }
   }
 
@@ -56,7 +63,7 @@ export default function Auth() {
         <span>Senha</span>
         <input type={'password'} value={password} onChange={e => setPassword(e.target.value)} />
 
-        <button type={'submit'}> Login </button>
+        <SubmitButton loading={loading}> {loading ? <FaSpinner /> : 'Login'} </SubmitButton>
       </Form>
     </PageContainer>
   )

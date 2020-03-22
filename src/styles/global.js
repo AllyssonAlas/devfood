@@ -16,5 +16,7 @@ export default createGlobalStyle`
 
    body, input, button {
     font-family: 'Baloo Thambi 2', Arial, Helvetica, sans-serif;
+    font-size: 1.7rem;
+
   }
 `
