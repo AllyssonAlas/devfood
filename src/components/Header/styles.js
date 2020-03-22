@@ -8,19 +8,38 @@ export const Container = styled.header`
   justify-content: space-between;
   height: 5rem;
   margin-bottom: 1.5rem;
-  padding: 0 2.5rem;
+  padding: 0 2rem;
+
+  h1 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 2.5rem;
+
+    span {
+      font-size: 2rem;
+      color: rgb(20, 116, 75);
+    }
+    br {
+      height: 20rem;
+      background-color: gold;
+    }
+  }
 
   div {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 
     a {
       color: rgba(255, 255, 255, 1);
       margin: 0 1.5rem;
       text-decoration: none;
-      font-size: 2rem;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    a:hover {
+      opacity: 0.8;
     }
 
     p {
@@ -28,15 +47,21 @@ export const Container = styled.header`
       font-size: 2rem;
     }
 
-    button {
-      align-content: flex-end;
-      background-color: rgba(0, 0, 0, 0);
-      border: 0;
+    img {
+      height: 4rem;
+      width: 4rem;
+      border-radius: 50%;
+      margin: 0 1rem;
+    }
+
+    img + a {
+      align-items: center;
       display: flex;
       height: 4rem;
       justify-content: center;
+      padding-top: 0.5rem;
+      margin: 0;
       min-width: 2rem;
-      margin: 0 1rem;
       width: 4rem;
     }
   }

@@ -7,8 +7,10 @@ import {store} from '../UserProvider'
 import {Container} from './styles'
 
 export default function Header() {
-  const user = useContext(store)
-  const {dispatch} = user
+  const userProvider = useContext(store)
+  const {dispatch} = userProvider
+
+  console.log(userProvider)
 
   function handleLogout() {
     localStorage.removeItem('user')
@@ -17,9 +19,11 @@ export default function Header() {
 
   return (
     <Container>
-      <h1>Dev food</h1>
+      <h1>
+        Dev<span>food</span>
+      </h1>
 
-      {Object.keys(user.state).length !== 0 && (
+      {Object.keys(userProvider.state).length !== 0 && (
         <>
           <div>
             <NavLink to={'/home'}>Receitas </NavLink>
@@ -28,9 +32,10 @@ export default function Header() {
           </div>
 
           <div>
-            <p>Allysson</p>
+            <p>{userProvider.state.user.name}</p>
+            <img src={userProvider.state.user.image} alt={'Imagem do usuário'} />
             <NavLink to={'/'} onClick={() => handleLogout()}>
-              <GoSignOut size={20} />
+              <GoSignOut size={30} />
             </NavLink>
           </div>
         </>
