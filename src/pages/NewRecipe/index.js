@@ -1,7 +1,11 @@
 import React, {useContext, useEffect, useState} from 'react'
+import {toast} from 'react-toastify'
+
+import 'react-toastify/dist/ReactToastify.css'
 
 import {store} from '../../components/UserProvider'
 import PageContainer from '../../components/PageContainer'
+import SubmitButton from '../../components/SubmitButton'
 
 import api from '../../services/api'
 
@@ -13,6 +17,7 @@ export default function MyRecipes() {
     category: '',
     description: '',
   })
+  const [loading, setLoading] = useState(false)
   const [categories, setCategories] = useState([])
   const userProvider = useContext(store)
   const {dispatch} = userProvider
@@ -21,23 +26,42 @@ export default function MyRecipes() {
     setFormField({...form, [e.id]: e.value})
   }
 
-  async function handleAddRecipe() {
+  async function handleAddRecipe(e) {
+    e.preventDefault()
+
+    const {name, description, category} = form
+
+    if (!name || !description || !category) {
+      return toast.error('Preencha todos os campos')
+    }
+
+    setLoading(true)
+
     try {
       const category = categories.find(c => c.name === form.category)
 
       const data = {
-        title: form.name,
-        description: form.description,
+        title: name,
+        description: description,
         category: category.id,
         user: userProvider.state.user.id,
       }
 
       const addedRecipe = await api.post('/recipe/', data)
 
-      console.log(addedRecipe)
-      console.log('Recipe added')
+      if (addedRecipe) {
+        setFormField({
+          name: '',
+          category: '',
+          description: '',
+        })
+
+        toast.success('Receita adiciona com sucesso')
+      }
     } catch (err) {
       console.log(err)
+    } finally {
+      setLoading(false)
     }
   }
 
@@ -55,7 +79,7 @@ export default function MyRecipes() {
   return (
     <PageContainer>
       <h1>Adicionar Receita</h1>
-      <Form>
+      <Form onSubmit={handleAddRecipe}>
         <input
           id={'name'}
           placeholder={'Nome da receita'}
@@ -69,13 +93,11 @@ export default function MyRecipes() {
           ))}
         </select>
 
-        <p>Descrição</p>
+        <h2>Descrição</h2>
 
         <textarea id={'description'} onChange={e => handleSetFormField(e.target)} value={form.description}></textarea>
 
-        <button type={'button'} onClick={handleAddRecipe}>
-          Criar nova receita
-        </button>
+        <SubmitButton loading={loading} title={'Criar nova receita'} />
       </Form>
     </PageContainer>
   )

@@ -6,10 +6,11 @@ import {FaSpinner} from 'react-icons/fa'
 import 'react-toastify/dist/ReactToastify.css'
 
 import PageContainer from '../../components/PageContainer'
+import SubmitButton from '../../components/SubmitButton'
 import {authenticate} from '../../services/auth'
 import {store} from '../../components/UserProvider'
 
-import {Form, SubmitButton} from './styles'
+import {Form} from './styles'
 
 export default function Auth() {
   const [username, setUsername] = useState('')
@@ -42,7 +43,7 @@ export default function Auth() {
       history.push('home')
     } catch (err) {
       toast.error('Usuário não existe', {
-        position: toast.POSITION.TOP_CENTER,
+        position: 'top-center',
       })
     } finally {
       setLoading(false)
@@ -63,7 +64,7 @@ export default function Auth() {
         <span>Senha</span>
         <input type={'password'} value={password} onChange={e => setPassword(e.target.value)} />
 
-        <SubmitButton loading={loading}> {loading ? <FaSpinner /> : 'Login'} </SubmitButton>
+        <SubmitButton loading={loading} title={'Login'} />
       </Form>
     </PageContainer>
   )

@@ -12,7 +12,7 @@ function App() {
       <Container>
         <Routes />
         <GlobalStyles />
-        <ToastContainer />
+        <ToastContainer position={'top-left'} autoClose={3000} />
       </Container>
     </UserProvider>
   )

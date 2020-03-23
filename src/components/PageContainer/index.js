@@ -1,19 +1,20 @@
 import styled from 'styled-components'
 
 const PageContainer = styled.div`
+  background-color: rgb(220, 220, 220, 1);
+  border-bottom-right-radius: 2.5rem;
   display: flex;
   flex: 1;
-  justify-content: space-around;
-  padding: 1rem;
-  background-color: rgb(220, 220, 220, 1);
   flex-direction: column;
+  justify-content: space-around;
   min-height: 40rem;
+  padding: 1rem;
 
   h1 {
-    display: block;
     color: rgba(255, 115, 0, 1);
-    text-align: center;
+    display: block;
     font-size: 2.5rem;
+    text-align: center;
   }
   div {
     padding: 2rem;
