@@ -1,7 +1,6 @@
 import React, {useState, useContext} from 'react'
 import {useHistory} from 'react-router-dom'
 import {toast} from 'react-toastify'
-import {FaSpinner} from 'react-icons/fa'
 
 import 'react-toastify/dist/ReactToastify.css'
 
@@ -17,8 +16,8 @@ export default function Auth() {
   const [password, setPassword] = useState('')
   const [loading, setLoading] = useState(false)
   const history = useHistory()
-  const user = useContext(store)
-  const {dispatch} = user
+  const userProvider = useContext(store)
+  const {dispatch} = userProvider
 
   async function handleSubmit(e) {
     e.preventDefault()
@@ -40,9 +39,9 @@ export default function Auth() {
         throw new Error()
       }
 
-      history.push('home')
+      return history.push('home')
     } catch (err) {
-      toast.error('Usuário não existe', {
+      return toast.error('Usuário não existe', {
         position: 'top-center',
       })
     } finally {

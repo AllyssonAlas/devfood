@@ -11,12 +11,14 @@ function UserProvider({children}) {
         return {user: action.payload}
       case 'LOGOUT':
         return inititalState
-      case 'REFRESH': {
-        const user = localStorage.getItem('user')
-        if (user) {
-          return {user: JSON.parse(user)}
+      case 'REFRESH':
+        {
+          const user = localStorage.getItem('user')
+          if (user) {
+            return {user: JSON.parse(user)}
+          }
         }
-      }
+        break
       default:
         return state
     }

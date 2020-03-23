@@ -13,8 +13,8 @@ import {Form} from './styles'
 
 export default function MyRecipes() {
   const [form, setFormField] = useState({
-    name: '',
-    category: '',
+    title: '',
+    categoryName: '',
     description: '',
   })
   const [loading, setLoading] = useState(false)
@@ -29,20 +29,20 @@ export default function MyRecipes() {
   async function handleAddRecipe(e) {
     e.preventDefault()
 
-    const {name, description, category} = form
+    const {title, description, categoryName} = form
 
-    if (!name || !description || !category) {
+    if (!title || !description || !categoryName) {
       return toast.error('Preencha todos os campos')
     }
 
     setLoading(true)
 
     try {
-      const category = categories.find(c => c.name === form.category)
+      const category = categories.find(c => c.title === form.category)
 
       const data = {
-        title: name,
-        description: description,
+        title,
+        description,
         category: category.id,
         user: userProvider.state.user.id,
       }
@@ -50,13 +50,13 @@ export default function MyRecipes() {
       const addedRecipe = await api.post('/recipe/', data)
 
       if (addedRecipe) {
-        setFormField({
-          name: '',
+        toast.success('Receita adiciona com sucesso')
+
+        return setFormField({
+          title: '',
           category: '',
           description: '',
         })
-
-        toast.success('Receita adiciona com sucesso')
       }
     } catch (err) {
       console.log(err)
@@ -81,13 +81,13 @@ export default function MyRecipes() {
       <h1>Adicionar Receita</h1>
       <Form onSubmit={handleAddRecipe}>
         <input
-          id={'name'}
+          id={'title'}
           placeholder={'Nome da receita'}
-          value={form.name}
+          value={form.title}
           onChange={e => handleSetFormField(e.target)}
         />
-        <select id={'category'} value={form.description} onChange={e => handleSetFormField(e.target)}>
-          <option>{form.category || 'Selecione uma categoria'}</option>
+        <select id={'categoryName'} value={form.categoryName} onChange={e => handleSetFormField(e.target)}>
+          <option>{form.categoryName || 'Selecione uma categoria'}</option>
           {categories.map(category => (
             <option key={category.id} value={category.name} label={category.name} />
           ))}
@@ -95,7 +95,7 @@ export default function MyRecipes() {
 
         <h2>Descrição</h2>
 
-        <textarea id={'description'} onChange={e => handleSetFormField(e.target)} value={form.description}></textarea>
+        <textarea id={'description'} onChange={e => handleSetFormField(e.target)} value={form.description} />
 
         <SubmitButton loading={loading} title={'Criar nova receita'} />
       </Form>

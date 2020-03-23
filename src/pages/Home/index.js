@@ -9,14 +9,16 @@ import {RecipeCard} from './styles'
 
 export default function Home() {
   const [recipes, setRecipes] = useState([])
-  const user = useContext(store)
-  const {dispatch} = user
+  const userProvider = useContext(store)
+  const {dispatch} = userProvider
 
   useEffect(() => {
     dispatch({type: 'REFRESH'})
     async function getRecipes() {
       const recipesRequest = await api.get('/recipe')
       setRecipes(recipesRequest.data)
+
+      console.log(recipesRequest.data)
     }
 
     getRecipes()

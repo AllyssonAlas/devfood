@@ -12,6 +12,7 @@ export default function MyRecipes() {
   const userProvider = useContext(store)
   const {dispatch} = userProvider
 
+  /* eslint-disable camelcase */
   async function handleDelete(id_recipe) {
     try {
       await api.delete(`/recipe/${id_recipe}`)
@@ -22,10 +23,9 @@ export default function MyRecipes() {
     }
   }
 
+  /* eslint-enable camelcase */
   useEffect(() => {
     dispatch({type: 'REFRESH'})
-
-    console.log(userProvider)
 
     async function getUserRecipes() {
       const {id} = userProvider.state.user || ''

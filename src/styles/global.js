@@ -1,7 +1,6 @@
 import {createGlobalStyle} from 'styled-components'
 
 export default createGlobalStyle`
-
  * {
     box-sizing: border-box;
     margin: 0;
@@ -17,6 +16,5 @@ export default createGlobalStyle`
    body, input, button {
     font-family: 'Baloo Thambi 2', Arial, Helvetica, sans-serif;
     font-size: 1.7rem;
-
   }
 `

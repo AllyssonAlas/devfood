@@ -10,8 +10,6 @@ export default function Header() {
   const userProvider = useContext(store)
   const {dispatch} = userProvider
 
-  console.log(userProvider)
-
   function handleLogout() {
     localStorage.removeItem('user')
     dispatch({type: 'LOGOUT'})
@@ -20,7 +18,8 @@ export default function Header() {
   return (
     <Container>
       <h1>
-        Dev<span>food</span>
+        Dev
+        <span>food</span>
       </h1>
 
       {Object.keys(userProvider.state).length !== 0 && (
