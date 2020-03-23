@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.header`
   align-items: center;
   background-color: rgba(255, 115, 0, 1);
+  border-top-left-radius: 2.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

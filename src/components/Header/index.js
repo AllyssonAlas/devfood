@@ -34,7 +34,7 @@ export default function Header() {
           <div>
             <p>{userProvider.state.user.name}</p>
             <img src={userProvider.state.user.image} alt={'Imagem do usuário'} />
-            <NavLink to={'/'} onClick={() => handleLogout()}>
+            <NavLink to={'/'} onClick={() => handleLogout()} title={'Sair'}>
               <GoSignOut size={30} />
             </NavLink>
           </div>
