@@ -1,11 +1,42 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
+import {Link} from 'react-router-dom'
+import {FaTrashAlt, FaPencilAlt, FaSpinner} from 'react-icons/fa'
 
-import {Container, RecipeCard} from './styles'
+import {Container, RecipeCard, IconButton} from './styles'
+import api from '../../services/api'
 
-export default function RecipeList({recipes}) {
+export default function RecipeList({recipes, owner}) {
+  const [recipeList, setRecipeList] = useState([])
+  const [loading, setLoading] = useState(false)
+
+  /* eslint-disable camelcase */
+  async function handleDelete(id_recipe) {
+    setLoading(true)
+    try {
+      await api.delete(`/recipe/${id_recipe}`)
+
+      const recipeIndex = recipes.findIndex(r => r.id === id_recipe)
+
+      if (recipeIndex >= 0) {
+        recipes.splice(recipeIndex, 1)
+      }
+
+      setRecipeList(recipes)
+    } catch (err) {
+      console.log(err)
+    } finally {
+      setLoading(false)
+    }
+  }
+  /* eslint-enable camelcase */
+
+  useEffect(() => {
+    setRecipeList(recipes)
+  }, [recipes])
+
   return (
     <Container>
-      {recipes.map(recipe => (
+      {recipeList.map(recipe => (
         <RecipeCard key={recipe.id}>
           <strong>{recipe.title}</strong>
           <hr />
@@ -17,7 +48,17 @@ export default function RecipeList({recipes}) {
             <p>{recipe.description}</p>
           </div>
           <div>
-            <a href="#">Ver receita</a>
+            <Link to="/home">Ver receita</Link>
+            {owner && (
+              <div>
+                <IconButton>
+                  <FaPencilAlt size={14} />
+                </IconButton>
+                <IconButton loading={loading} onClick={() => handleDelete(recipe.id)}>
+                  {loading ? <FaSpinner size={14} /> : <FaTrashAlt size={14} />}
+                </IconButton>
+              </div>
+            )}
           </div>
         </RecipeCard>
       ))}

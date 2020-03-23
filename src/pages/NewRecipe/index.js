@@ -38,7 +38,9 @@ export default function MyRecipes() {
     setLoading(true)
 
     try {
-      const category = categories.find(c => c.title === form.category)
+      console.log(form)
+
+      const category = await categories.find(c => c.title === form.category)
 
       const data = {
         title,
@@ -54,7 +56,7 @@ export default function MyRecipes() {
 
         return setFormField({
           title: '',
-          category: '',
+          categoryName: '',
           description: '',
         })
       }
