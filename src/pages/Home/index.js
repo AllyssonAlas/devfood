@@ -2,10 +2,9 @@ import React, {useContext, useEffect, useState} from 'react'
 
 import {store} from '../../components/UserProvider'
 import PageContainer from '../../components/PageContainer'
+import RecipeList from '../../components/RecipeList'
 
 import api from '../../services/api'
-
-import {RecipeCard} from './styles'
 
 export default function Home() {
   const [recipes, setRecipes] = useState([])
@@ -17,26 +16,15 @@ export default function Home() {
     async function getRecipes() {
       const recipesRequest = await api.get('/recipe')
       setRecipes(recipesRequest.data)
-
-      console.log(recipesRequest.data)
     }
 
     getRecipes()
   }, [])
   return (
     <PageContainer>
-      <h1>Home</h1>
+      <h1>Receitas</h1>
       <div>
-        {recipes.map(item => {
-          return (
-            <RecipeCard key={item.id}>
-              <h2>{item.title}</h2>
-              <i>Criado por {item.user.name}</i>
-              <p>{item.description}</p>
-              <span>{item.category.name}</span>
-            </RecipeCard>
-          )
-        })}
+        <RecipeList recipes={recipes} />
       </div>
     </PageContainer>
   )

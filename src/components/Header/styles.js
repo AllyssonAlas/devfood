@@ -17,7 +17,7 @@ export const Container = styled.header`
 
     span {
       font-size: 2rem;
-      color: rgb(20, 116, 75);
+      color: rgba(20, 116, 75, 1);
     }
   }
 

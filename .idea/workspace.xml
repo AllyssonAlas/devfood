@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e4e0d2f-fdeb-40a9-bcbd-a82ffd50127c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/RecipeList/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/RecipeList/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SubmitButton/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SubmitButton/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UserProvider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserProvider/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Auth/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Auth/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Auth/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Auth/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/MyRecipes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MyRecipes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/NewRecipe/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NewRecipe/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +83,7 @@
       <workItem from="1584960421007" duration="164000" />
       <workItem from="1584960622212" duration="322000" />
       <workItem from="1584960996212" duration="723000" />
-      <workItem from="1584961723403" duration="2912000" />
+      <workItem from="1584961723403" duration="12014000" />
     </task>
     <servers />
   </component>
@@ -130,10 +123,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584907256270" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1584929358795">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1584968818054">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1584929358795" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1584968818054" />
     <state x="100" y="100" width="483" height="528" key="dock-window-1" timestamp="1584927805364">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
