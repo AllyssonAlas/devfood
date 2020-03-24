@@ -10,7 +10,7 @@ import Loading from '../../components/Loading'
 export default function MyRecipes() {
   const [loading, setLoading] = useState(true)
   const [userRecipes, setUserRecipes] = useState([])
-  const {dispatch, state} = useContext(store)
+  const {state} = useContext(store)
 
   useEffect(() => {
     async function getUserRecipes() {
@@ -29,10 +29,6 @@ export default function MyRecipes() {
       getUserRecipes()
     }
   }, [state])
-
-  useEffect(() => {
-    dispatch({type: 'REFRESH'})
-  }, [])
 
   return (
     <PageContainer>

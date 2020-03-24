@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react'
+import React, {useState, useContext, useEffect} from 'react'
 import {useHistory} from 'react-router-dom'
 import {toast} from 'react-toastify'
 
@@ -11,7 +11,7 @@ import {store} from '../../components/UserProvider'
 
 import {Form} from './styles'
 
-export default function Auth() {
+export default function Login({isAuthed}) {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [loading, setLoading] = useState(false)
@@ -47,6 +47,14 @@ export default function Auth() {
       setLoading(false)
     }
   }
+
+  useEffect(() => {
+    if (isAuthed) {
+      history.push('/home')
+    }
+
+    console.log(isAuthed)
+  }, [isAuthed])
 
   return (
     <PageContainer>

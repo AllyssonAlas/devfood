@@ -1,4 +1,5 @@
 import React, {useContext, useEffect, useState} from 'react'
+import {useHistory} from 'react-router-dom'
 import {toast} from 'react-toastify'
 
 import 'react-toastify/dist/ReactToastify.css'
@@ -11,7 +12,7 @@ import api from '../../services/api'
 
 import {Form} from './styles'
 
-export default function MyRecipes() {
+export default function RecipeForm({match}) {
   const [form, setFormField] = useState({
     title: '',
     categoryName: '',
@@ -19,13 +20,15 @@ export default function MyRecipes() {
   })
   const [loading, setLoading] = useState(false)
   const [categories, setCategories] = useState([])
-  const {dispatch, state} = useContext(store)
+  const {id} = match.params
+  const history = useHistory()
+  const {state} = useContext(store)
 
   function handleSetFormField(e) {
     setFormField({...form, [e.id]: e.value})
   }
 
-  async function handleAddRecipe(e) {
+  async function handleSubmitRecipe(e) {
     e.preventDefault()
 
     const {title, description, categoryName} = form
@@ -46,10 +49,20 @@ export default function MyRecipes() {
         user: state.user.id,
       }
 
-      const addedRecipe = await api.post('/recipe/', data)
+      const id_recipe = id || null
 
-      if (addedRecipe) {
-        toast.success('Receita adiciona com sucesso')
+      console.log(id_recipe, data)
+
+      const submitedRecipe = await api.put(`/recipe/${id_recipe}`, data) // : await api.post('/recipe/', data)
+
+      if (submitedRecipe && id) {
+        toast.success('Receita editada com sucesso')
+        history.goBack()
+        return
+      }
+
+      if (submitedRecipe) {
+        toast.success('Receita adicionada com sucesso')
 
         return setFormField({
           title: '',
@@ -65,8 +78,6 @@ export default function MyRecipes() {
   }
 
   useEffect(() => {
-    dispatch({type: 'REFRESH'})
-
     async function getCategories() {
       const categoriesRequest = await api.get('/category')
 
@@ -75,10 +86,33 @@ export default function MyRecipes() {
     getCategories()
   }, [])
 
+  useEffect(() => {
+    async function getRecipe(recipeId) {
+      setLoading(true)
+
+      const recipeRequest = await api.get(`recipe/${recipeId}`)
+
+      const {title, category, description} = recipeRequest.data
+
+      if (recipeRequest) {
+        setFormField({
+          title,
+          categoryName: category.name,
+          description,
+        })
+      }
+      setLoading(false)
+    }
+
+    if (id) {
+      getRecipe(id)
+    }
+  }, [])
+
   return (
     <PageContainer>
-      <h1>Adicionar Receita</h1>
-      <Form onSubmit={handleAddRecipe}>
+      <h1>{id ? 'Editar Receita' : 'Adicionar Receita'}</h1>
+      <Form onSubmit={handleSubmitRecipe}>
         <input
           id={'title'}
           placeholder={'Nome da receita'}
@@ -96,7 +130,7 @@ export default function MyRecipes() {
 
         <textarea id={'description'} onChange={e => handleSetFormField(e.target)} value={form.description} />
 
-        <Button loading={loading} title={'Criar nova receita'} type={'submit'} />
+        <Button loading={loading} title={id ? 'Editar Receita' : 'Criar nova receita'} type={'submit'} />
       </Form>
     </PageContainer>
   )

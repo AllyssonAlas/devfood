@@ -3,11 +3,12 @@ import styled from 'styled-components'
 export const Container = styled.header`
   align-items: center;
   background-color: rgba(255, 115, 0, 1);
+  border-bottom: rgba(20, 116, 75, 1) solid 0.5rem;
   border-top-left-radius: 2.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 5rem;
+  height: 5.5rem;
   margin-bottom: 1.5rem;
   padding: 0 2rem;
 

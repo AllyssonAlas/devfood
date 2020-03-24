@@ -20,6 +20,10 @@ export const RecipeCard = styled.li`
   strong {
     color: rgba(255, 115, 0, 1);
     font-size: 2rem;
+    max-width: 32rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   hr {
@@ -37,13 +41,10 @@ export const RecipeCard = styled.li`
   div {
     height: 10rem;
     padding: 0;
+    max-width: 32rem;
     overflow: hidden;
     text-align: justify;
     text-overflow: ellipsis;
-
-    p {
-      max-width: 32rem;
-    }
   }
 
   div:last-child {

@@ -3,7 +3,9 @@ import {ToastContainer} from 'react-toastify'
 
 import Container from './components/Container'
 import {UserProvider} from './components/UserProvider'
+
 import Routes from './routes'
+
 import GlobalStyles from './styles/global'
 
 function App() {

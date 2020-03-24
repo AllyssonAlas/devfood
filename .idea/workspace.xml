@@ -2,23 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e4e0d2f-fdeb-40a9-bcbd-a82ffd50127c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Loading/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Recipe/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Recipe/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Warning/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Warning/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/RecipeList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecipeList/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/RecipeList/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecipeList/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SubmitButton/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SubmitButton/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Auth/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Auth/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Auth/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Auth/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/MyRecipes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MyRecipes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/NewRecipe/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NewRecipe/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/NewRecipe/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RecipeForm/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/NewRecipe/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RecipeForm/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Recipe/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Recipe/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +59,12 @@
     <property name="prettierjs.PrettierConfiguration.Package" value="F:\Developer\React\devfood\node_modules\prettier" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Developer\React-ReactNative\React-only\devfood\src\pages\Warning" />
+      <recent name="C:\Developer\React-ReactNative\React-only\devfood\src\pages" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -101,7 +107,9 @@
       <workItem from="1584990173958" duration="11446000" />
       <workItem from="1585002930505" duration="143000" />
       <workItem from="1585003179930" duration="316000" />
-      <workItem from="1585005857411" duration="16858000" />
+      <workItem from="1585005857411" duration="19953000" />
+      <workItem from="1585069369044" duration="75000" />
+      <workItem from="1585069453409" duration="18317000" />
     </task>
     <servers />
   </component>
@@ -121,22 +129,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584907144437" />
-    <state width="1344" height="317" key="GridCell.Tab.0.bottom" timestamp="1585016872166">
+    <state width="1344" height="317" key="GridCell.Tab.0.bottom" timestamp="1585088222136">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="317" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585016872166" />
-    <state width="1344" height="317" key="GridCell.Tab.0.center" timestamp="1585016872166">
+    <state width="1344" height="317" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585088222136" />
+    <state width="1344" height="317" key="GridCell.Tab.0.center" timestamp="1585088222136">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="317" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585016872166" />
-    <state width="1344" height="317" key="GridCell.Tab.0.left" timestamp="1585016872166">
+    <state width="1344" height="317" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585088222136" />
+    <state width="1344" height="317" key="GridCell.Tab.0.left" timestamp="1585088222136">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="317" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585016872166" />
-    <state width="1344" height="317" key="GridCell.Tab.0.right" timestamp="1585016872166">
+    <state width="1344" height="317" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585088222136" />
+    <state width="1344" height="317" key="GridCell.Tab.0.right" timestamp="1585088222136">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="317" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585016872166" />
+    <state width="1344" height="317" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585088222136" />
     <state width="1344" height="514" key="GridCell.Tab.1.bottom" timestamp="1585002551761">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -189,10 +197,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584907256270" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1584995470962">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1585024035633">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1584995470962" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1585024035633" />
     <state x="490" y="274" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585001869174">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -213,5 +221,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1584962291772" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1585083619010">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1585083619010" />
   </component>
 </project>

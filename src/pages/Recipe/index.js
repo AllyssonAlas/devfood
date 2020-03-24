@@ -17,7 +17,7 @@ export default function Recipe({match}) {
   const [loading, setLoading] = useState(true)
   const [recipe, setRecipe] = useState({})
   const {recipeId} = match.params
-  const {dispatch, state} = useContext(store)
+  const {state} = useContext(store)
   const history = useHistory()
 
   /* eslint-disable camelcase */
@@ -38,7 +38,6 @@ export default function Recipe({match}) {
   }
 
   useEffect(() => {
-    dispatch({type: 'REFRESH'})
     async function getRecipe(id_receita) {
       const recipeRequest = await api.get(`/recipe/${id_receita}`)
       await setRecipe(recipeRequest.data)
@@ -67,7 +66,7 @@ export default function Recipe({match}) {
               </div>
               {recipe.user.id === state.user.id && (
                 <div>
-                  <Button title={'Editar Receita'} />
+                  <Button title={'Editar Receita'} onClick={() => history.push(`/recipeForm/${recipe.id}`)} />
                   <Button title={'Apagar Receita'} onClick={() => handleDelete(recipeId)} type={'button'} />
                 </div>
               )}

@@ -1,13 +1,15 @@
-import React, {useContext} from 'react'
-import {NavLink} from 'react-router-dom'
+import React, {useContext, useEffect} from 'react'
+import {NavLink, useLocation, useHistory} from 'react-router-dom'
 import {GoSignOut} from 'react-icons/go'
 
 import {store} from '../UserProvider'
 
 import {Container} from './styles'
 
-export default function Header() {
-  const {dispatch, state} = useContext(store)
+export default function Header({user}) {
+  const {dispatch} = useContext(store)
+  const location = useLocation()
+  const history = useHistory()
 
   function handleLogout() {
     localStorage.removeItem('user')
@@ -20,18 +22,17 @@ export default function Header() {
         Dev
         <span>food</span>
       </h1>
-
-      {Object.keys(state).length !== 0 && (
+      {user && (
         <>
           <div>
             <NavLink to={'/home'}>Receitas </NavLink>
             <NavLink to={'/myRecipes'}>Minhas Receitas</NavLink>
-            <NavLink to={'/newRecipe'}>Adicionar Nova Receita</NavLink>
+            <NavLink to={'/recipeForm'}>Adicionar Nova Receita</NavLink>
           </div>
 
           <div>
-            <p>{state.user.name}</p>
-            <img src={state.user.image} alt={'Imagem do usuário'} />
+            <p>{user.name}</p>
+            <img src={user.image} alt={'Imagem do usuário'} />
             <NavLink to={'/'} onClick={() => handleLogout()} title={'Sair'}>
               <GoSignOut size={30} />
             </NavLink>

@@ -1,25 +1,46 @@
-import React from 'react'
-import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import React, {useContext, useEffect} from 'react'
+import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom'
 
 import Header from './components/Header'
+import {store} from './components/UserProvider'
 
-import Auth from './pages/Auth'
+import Login from './pages/Login'
 import Home from './pages/Home'
 import MyRecipes from './pages/MyRecipes'
-import NewRecipe from './pages/NewRecipe'
+import RecipeForm from './pages/RecipeForm'
 import Recipe from './pages/Recipe'
+import Warning from './pages/Warning'
 
 export default function Routes() {
-  /*put the dispatch refresh here. */
+  const {dispatch, state} = useContext(store)
+
+  useEffect(() => {
+    if (!state) {
+      dispatch({type: 'REFRESH'})
+    }
+  })
+
+  useEffect(() => {
+    dispatch({type: 'REFRESH'})
+  }, [])
+
   return (
     <BrowserRouter>
-      <Header />
+      <Header user={state !== undefined ? state.user : false} />
       <Switch>
-        <Route path={'/'} component={Auth} exact />
-        <Route path={'/home'} component={Home} />
-        <Route path={'/myRecipes'} component={MyRecipes} />
-        <Route path={'/newRecipe'} component={NewRecipe} />
-        <Route path={'/recipe/:recipeId'} component={Recipe} />
+        <Route path={'/'} component={() => <Login isAuthed={state !== undefined ? state.user : false} />} exact />
+        <Route path={'/warning'} component={() => <Warning isAuthed={state !== undefined} />} />
+
+        {!state ? (
+          <Redirect to={{pathname: '/warning'}} />
+        ) : (
+          <>
+            <Route path={'/home'} component={Home} />
+            <Route path={'/myRecipes'} component={MyRecipes} />
+            <Route path={'/recipeForm/:id?'} component={RecipeForm} />
+            <Route path={'/recipe/:recipeId'} component={Recipe} />
+          </>
+        )}
       </Switch>
     </BrowserRouter>
   )
