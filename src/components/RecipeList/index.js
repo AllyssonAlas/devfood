@@ -2,8 +2,9 @@ import React, {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
 import {FaTrashAlt, FaPencilAlt, FaSpinner} from 'react-icons/fa'
 
-import {Container, RecipeCard, IconButton} from './styles'
 import api from '../../services/api'
+
+import {Container, RecipeCard, IconButton} from './styles'
 
 export default function RecipeList({recipes, owner}) {
   const [recipeList, setRecipeList] = useState([])
@@ -32,7 +33,7 @@ export default function RecipeList({recipes, owner}) {
 
   useEffect(() => {
     setRecipeList(recipes)
-  }, [recipes])
+  }, [])
 
   return (
     <Container>
@@ -48,7 +49,7 @@ export default function RecipeList({recipes, owner}) {
             <p>{recipe.description}</p>
           </div>
           <div>
-            <Link to="/home">Ver receita</Link>
+            <Link to={`/recipe/${recipe.id}`}>Ver receita</Link>
             {owner && (
               <div>
                 <IconButton>

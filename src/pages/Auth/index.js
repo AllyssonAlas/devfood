@@ -5,7 +5,7 @@ import {toast} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 import PageContainer from '../../components/PageContainer'
-import SubmitButton from '../../components/SubmitButton'
+import Button from '../../components/Button'
 import {authenticate} from '../../services/auth'
 import {store} from '../../components/UserProvider'
 
@@ -16,8 +16,7 @@ export default function Auth() {
   const [password, setPassword] = useState('')
   const [loading, setLoading] = useState(false)
   const history = useHistory()
-  const userProvider = useContext(store)
-  const {dispatch} = userProvider
+  const {dispatch} = useContext(store)
 
   async function handleSubmit(e) {
     e.preventDefault()
@@ -63,7 +62,7 @@ export default function Auth() {
         <span>Senha</span>
         <input type={'password'} value={password} onChange={e => setPassword(e.target.value)} />
 
-        <SubmitButton loading={loading} title={'Login'} />
+        <Button loading={loading} title={'Login'} type={'submit'} />
       </Form>
     </PageContainer>
   )

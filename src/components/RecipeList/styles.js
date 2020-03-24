@@ -8,14 +8,14 @@ export const Container = styled.ul`
 `
 
 export const RecipeCard = styled.li`
-  display: flex;
-  flex-direction: column;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 0.5rem;
-  padding: 1.5rem;
+  color: rgba(20, 116, 75);
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
   height: 25rem;
-  color: rgba(20, 116, 75);
+  padding: 1.5rem;
 
   strong {
     color: rgba(255, 115, 0, 1);
@@ -35,11 +35,15 @@ export const RecipeCard = styled.li`
   }
 
   div {
+    height: 10rem;
     padding: 0;
     overflow: hidden;
-    text-overflow: ellipsis;
-    height: 10rem;
     text-align: justify;
+    text-overflow: ellipsis;
+
+    p {
+      max-width: 32rem;
+    }
   }
 
   div:last-child {

@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css'
 
 import {store} from '../../components/UserProvider'
 import PageContainer from '../../components/PageContainer'
-import SubmitButton from '../../components/SubmitButton'
+import Button from '../../components/Button'
 
 import api from '../../services/api'
 
@@ -19,8 +19,7 @@ export default function MyRecipes() {
   })
   const [loading, setLoading] = useState(false)
   const [categories, setCategories] = useState([])
-  const userProvider = useContext(store)
-  const {dispatch} = userProvider
+  const {dispatch, state} = useContext(store)
 
   function handleSetFormField(e) {
     setFormField({...form, [e.id]: e.value})
@@ -38,15 +37,13 @@ export default function MyRecipes() {
     setLoading(true)
 
     try {
-      console.log(form)
-
       const category = await categories.find(c => c.title === form.category)
 
       const data = {
         title,
         description,
         category: category.id,
-        user: userProvider.state.user.id,
+        user: state.user.id,
       }
 
       const addedRecipe = await api.post('/recipe/', data)
@@ -99,7 +96,7 @@ export default function MyRecipes() {
 
         <textarea id={'description'} onChange={e => handleSetFormField(e.target)} value={form.description} />
 
-        <SubmitButton loading={loading} title={'Criar nova receita'} />
+        <Button loading={loading} title={'Criar nova receita'} type={'submit'} />
       </Form>
     </PageContainer>
   )

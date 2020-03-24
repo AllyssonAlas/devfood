@@ -9,9 +9,8 @@ const rotate = keyframes`
   }
 `
 
-export const Button = styled.button.attrs(props => ({
+export const Container = styled.button.attrs(props => ({
   disabled: props.loading,
-  type: 'submit',
 }))`
   background-color: rgba(255, 115, 0, 1);
   border: 0;

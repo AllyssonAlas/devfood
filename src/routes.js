@@ -7,8 +7,10 @@ import Auth from './pages/Auth'
 import Home from './pages/Home'
 import MyRecipes from './pages/MyRecipes'
 import NewRecipe from './pages/NewRecipe'
+import Recipe from './pages/Recipe'
 
 export default function Routes() {
+  /*put the dispatch refresh here. */
   return (
     <BrowserRouter>
       <Header />
@@ -17,6 +19,7 @@ export default function Routes() {
         <Route path={'/home'} component={Home} />
         <Route path={'/myRecipes'} component={MyRecipes} />
         <Route path={'/newRecipe'} component={NewRecipe} />
+        <Route path={'/recipe/:recipeId'} component={Recipe} />
       </Switch>
     </BrowserRouter>
   )
