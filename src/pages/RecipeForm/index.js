@@ -5,7 +5,7 @@ import {toast} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 import {store} from '../../components/UserProvider'
-import PageContainer from '../../components/PageContainer'
+import Container from '../../components/Container'
 import Button from '../../components/Button'
 
 import api from '../../services/api'
@@ -53,7 +53,7 @@ export default function RecipeForm({match}) {
 
       console.log(id_recipe, data)
 
-      const submitedRecipe = await api.put(`/recipe/${id_recipe}`, data) // : await api.post('/recipe/', data)
+      const submitedRecipe = id ? await api.put(`/recipe/${id_recipe}`, data) : await api.post('/recipe/', data)
 
       if (submitedRecipe && id) {
         toast.success('Receita editada com sucesso')
@@ -110,7 +110,7 @@ export default function RecipeForm({match}) {
   }, [])
 
   return (
-    <PageContainer>
+    <Container>
       <h1>{id ? 'Editar Receita' : 'Adicionar Receita'}</h1>
       <Form onSubmit={handleSubmitRecipe}>
         <input
@@ -125,13 +125,10 @@ export default function RecipeForm({match}) {
             <option key={category.id} value={category.name} label={category.name} />
           ))}
         </select>
-
         <h2>Descrição</h2>
-
         <textarea id={'description'} onChange={e => handleSetFormField(e.target)} value={form.description} />
-
         <Button loading={loading} title={id ? 'Editar Receita' : 'Criar nova receita'} type={'submit'} />
       </Form>
-    </PageContainer>
+    </Container>
   )
 }

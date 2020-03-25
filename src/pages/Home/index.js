@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 
+import Container from '../../components/Container'
 import Loading from '../../components/Loading'
-import PageContainer from '../../components/PageContainer'
 import RecipeList from '../../components/RecipeList'
 
 import api from '../../services/api'
@@ -21,18 +21,16 @@ export default function Home() {
     getRecipes()
   }, [])
 
+  if (loading) {
+    return <Loading />
+  }
+
   return (
-    <PageContainer>
-      {loading ? (
-        <Loading />
-      ) : (
-        <>
-          <h1>Receitas</h1>
-          <div>
-            <RecipeList recipes={recipes} />
-          </div>
-        </>
-      )}
-    </PageContainer>
+    <Container>
+      <h1>Receitas</h1>
+      <div>
+        <RecipeList recipes={recipes} />
+      </div>
+    </Container>
   )
 }

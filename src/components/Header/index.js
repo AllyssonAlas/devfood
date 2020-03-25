@@ -1,6 +1,8 @@
-import React, {useContext, useEffect} from 'react'
-import {NavLink, useLocation, useHistory} from 'react-router-dom'
+import React, {useContext} from 'react'
+import {NavLink} from 'react-router-dom'
 import {GoSignOut} from 'react-icons/go'
+
+import px2vw from '../../utils/px2vw'
 
 import {store} from '../UserProvider'
 
@@ -8,8 +10,6 @@ import {Container} from './styles'
 
 export default function Header({user}) {
   const {dispatch} = useContext(store)
-  const location = useLocation()
-  const history = useHistory()
 
   function handleLogout() {
     localStorage.removeItem('user')
@@ -34,7 +34,7 @@ export default function Header({user}) {
             <p>{user.name}</p>
             <img src={user.image} alt={'Imagem do usuário'} />
             <NavLink to={'/'} onClick={() => handleLogout()} title={'Sair'}>
-              <GoSignOut size={30} />
+              <GoSignOut size={px2vw(32)} />
             </NavLink>
           </div>
         </>

@@ -1,39 +1,43 @@
 import styled from 'styled-components'
 
+import px2vw from '../../utils/px2vw'
+
 export const Container = styled.header`
   align-items: center;
   background-color: rgba(255, 115, 0, 1);
   border-bottom: rgba(20, 116, 75, 1) solid 0.5rem;
-  border-top-left-radius: 2.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 5.5rem;
-  margin-bottom: 1.5rem;
+  height: ${px2vw(60)};
+  left: 0;
   padding: 0 2rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
 
   h1 {
     color: rgba(255, 255, 255, 1);
-    font-size: 2.5rem;
+    font-size: 2rem;
 
     span {
-      font-size: 2rem;
+      font-size: 1.5rem;
       color: rgba(20, 116, 75, 1);
     }
   }
 
   div {
+    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 
     a {
       color: rgba(255, 255, 255, 1);
-      margin: 0 1.5rem;
-      text-decoration: none;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
+      margin: 0 1rem;
       text-align: center;
+      text-decoration: none;
     }
 
     a:hover {
@@ -42,25 +46,24 @@ export const Container = styled.header`
 
     p {
       color: rgba(255, 255, 255, 1);
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
 
     img {
-      height: 4rem;
-      width: 4rem;
       border-radius: 50%;
+      height: ${px2vw(45)};
       margin: 0 1rem;
+      width: ${px2vw(45)};
     }
 
     img + a {
       align-items: center;
       display: flex;
-      height: 4rem;
+      height: ${px2vw(40)};
       justify-content: center;
       padding-top: 0.5rem;
       margin: 0;
-      min-width: 2rem;
-      width: 4rem;
+      width: ${px2vw(40)};
     }
   }
 `

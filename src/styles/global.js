@@ -1,20 +1,37 @@
 import {createGlobalStyle} from 'styled-components'
 
+import px2vw from '../utils/px2vw'
+
 export default createGlobalStyle`
  * {
     box-sizing: border-box;
     margin: 0;
     outline: 0;
     padding: 0;
-  }
+ }
 
   html, body, #root {
+    font-size: ${px2vw(20)};
     min-height: 100%;
-    font-size: 10px;
+    padding-top: 1rem;
+
+    @media (max-width: 768px) {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    @media (min-width: 768px) {
+      font-size: ${px2vw(18)};
+    }
+
+    @media (min-width: 992px) {
+      font-size: ${px2vw(16)};
+    }
   }
 
-   body, input, button {
+   body, input, button, select, textarea {
     font-family: 'Baloo Thambi 2', Arial, Helvetica, sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
 `

@@ -2,11 +2,11 @@ import styled from 'styled-components'
 
 export const RecipeCard = styled.div`
   background-color: rgba(255, 255, 255, 1);
-  display: flex;
   color: rgba(20, 116, 75);
+  display: flex;
   flex-direction: column;
-  min-height: 35rem;
   justify-content: space-between;
+  min-height: 35rem;
 
   div:first-child {
     align-items: center;
@@ -23,11 +23,11 @@ export const RecipeCard = styled.div`
     }
 
     p {
-      text-align: justify;
-      font-weight: 600;
       font-size: 1.2rem;
+      font-weight: 600;
       min-height: 20rem;
       padding: 1rem;
+      text-align: justify;
       width: 100%;
     }
   }

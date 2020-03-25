@@ -1,7 +1,7 @@
 import React, {createContext, useReducer} from 'react'
 
-const inititalState = {}
-const store = createContext(inititalState)
+const initialState = {}
+const store = createContext(initialState)
 const {Provider} = store
 
 function UserProvider({children}) {
@@ -10,7 +10,7 @@ function UserProvider({children}) {
       case 'LOGIN':
         return {user: action.payload}
       case 'LOGOUT':
-        return inititalState
+        return initialState
       case 'REFRESH':
         {
           const user = localStorage.getItem('user')
@@ -22,7 +22,7 @@ function UserProvider({children}) {
       default:
         return state
     }
-  }, inititalState)
+  }, initialState)
 
   return <Provider value={{state, dispatch}}>{children}</Provider>
 }

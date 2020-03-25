@@ -8,11 +8,11 @@ export const Form = styled.form`
   input,
   select,
   textarea {
-    border-radius: 1rem;
     border: 0.1rem solid rgba(240, 240, 240, 1);
+    border-radius: 1rem;
+    margin: 1rem 0;
     min-height: 3.5rem;
     padding: 1rem 1.5rem;
-    margin: 1rem 0;
   }
 
   h2 {

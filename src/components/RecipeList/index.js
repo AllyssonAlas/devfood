@@ -40,8 +40,7 @@ export default function RecipeList({recipes, owner}) {
     <Container>
       {recipeList.map(recipe => (
         <RecipeCard key={recipe.id}>
-          <strong>{recipe.title}</strong>
-          <hr />
+          <strong title={recipe.title}>{recipe.title}</strong>
           <div>
             <em>Criado por {recipe.user.name}</em>
             <p>{recipe.category.name} </p>
@@ -54,10 +53,10 @@ export default function RecipeList({recipes, owner}) {
             {owner && (
               <div>
                 <IconButton onClick={() => history.push(`/recipeForm/${recipe.id}`)}>
-                  <FaPencilAlt size={14} />
+                  <FaPencilAlt />
                 </IconButton>
                 <IconButton loading={loading} onClick={() => handleDelete(recipe.id)}>
-                  {loading ? <FaSpinner size={14} /> : <FaTrashAlt size={14} />}
+                  {loading ? <FaSpinner /> : <FaTrashAlt />}
                 </IconButton>
               </div>
             )}

@@ -1,11 +1,11 @@
 import React, {useContext, useEffect, useState} from 'react'
 
 import {store} from '../../components/UserProvider'
-import PageContainer from '../../components/PageContainer'
+import Loading from '../../components/Loading'
+import Container from '../../components/Container'
 import RecipeList from '../../components/RecipeList'
 
 import api from '../../services/api'
-import Loading from '../../components/Loading'
 
 export default function MyRecipes() {
   const [loading, setLoading] = useState(true)
@@ -30,10 +30,14 @@ export default function MyRecipes() {
     }
   }, [state])
 
+  if (loading) {
+    return <Loading />
+  }
+
   return (
-    <PageContainer>
+    <Container>
       {loading ? (
-        <Loading />
+        <h1> arregando</h1>
       ) : (
         <>
           <h1>Minhas Receitas</h1>
@@ -42,6 +46,6 @@ export default function MyRecipes() {
           </div>
         </>
       )}
-    </PageContainer>
+    </Container>
   )
 }

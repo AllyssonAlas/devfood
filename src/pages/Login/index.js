@@ -4,7 +4,7 @@ import {toast} from 'react-toastify'
 
 import 'react-toastify/dist/ReactToastify.css'
 
-import PageContainer from '../../components/PageContainer'
+import Container from '../../components/Container'
 import Button from '../../components/Button'
 import {authenticate} from '../../services/auth'
 import {store} from '../../components/UserProvider'
@@ -52,12 +52,10 @@ export default function Login({isAuthed}) {
     if (isAuthed) {
       history.push('/home')
     }
-
-    console.log(isAuthed)
   }, [isAuthed])
 
   return (
-    <PageContainer>
+    <Container>
       <h1>Entre com seus dados</h1>
       <Form onSubmit={handleSubmit}>
         <span>Email</span>
@@ -72,6 +70,6 @@ export default function Login({isAuthed}) {
 
         <Button loading={loading} title={'Login'} type={'submit'} />
       </Form>
-    </PageContainer>
+    </Container>
   )
 }
