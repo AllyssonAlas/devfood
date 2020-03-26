@@ -20,6 +20,10 @@ const Container = styled.div`
     display: block;
     font-size: 1.7rem;
     text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 4rem;
+    }
   }
 
   div {

@@ -1,5 +1,5 @@
 import React, {useContext, useEffect, useState} from 'react'
-import {useHistory} from 'react-router-dom'
+import {useHistory, useLocation} from 'react-router-dom'
 import {toast} from 'react-toastify'
 import PropTypes from 'prop-types'
 
@@ -23,6 +23,7 @@ export default function RecipeForm({match}) {
   const [categories, setCategories] = useState([])
   const {id} = match.params
   const history = useHistory()
+  const location = useLocation()
   const {state} = useContext(store)
 
   function handleSetFormField(e) {
@@ -109,6 +110,14 @@ export default function RecipeForm({match}) {
       getRecipe(id)
     }
   }, [])
+
+  useEffect(() => {
+    setFormField({
+      title: '',
+      categoryName: '',
+      description: '',
+    })
+  }, [location])
 
   return (
     <Container>

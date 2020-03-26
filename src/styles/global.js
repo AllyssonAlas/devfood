@@ -13,12 +13,10 @@ export default createGlobalStyle`
   html, body, #root {
     font-size: ${px2vw(20)};
     min-height: 100%;
-    padding-top: 1rem;
+    padding-top: 1.2rem;
 
     @media (max-width: 768px) {
-      align-items: center;
-      display: flex;
-      justify-content: center;
+      padding-top: 2.5rem;
     }
 
     @media (min-width: 768px) {
