@@ -1,4 +1,5 @@
 import React, {createContext, useReducer} from 'react'
+import PropTypes from 'prop-types'
 
 const initialState = {}
 const store = createContext(initialState)
@@ -28,3 +29,7 @@ function UserProvider({children}) {
 }
 
 export {store, UserProvider}
+
+UserProvider.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.element).isRequired,
+}

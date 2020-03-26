@@ -1,6 +1,7 @@
 import React, {useContext, useEffect, useState} from 'react'
 import {useHistory} from 'react-router-dom'
 import {toast} from 'react-toastify'
+import PropTypes from 'prop-types'
 
 import 'react-toastify/dist/ReactToastify.css'
 
@@ -71,4 +72,12 @@ export default function Recipe({match}) {
       </div>
     </Container>
   )
+}
+
+Recipe.propTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      recipeId: PropTypes.number,
+    }),
+  }).isRequired,
 }

@@ -3,31 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="3e4e0d2f-fdeb-40a9-bcbd-a82ffd50127c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Container/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Container/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Loading/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loading/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageContainer/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/RecipeList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecipeList/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RecipeList/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecipeList/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UserProvider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserProvider/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/px2vw.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Login/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/MyRecipes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MyRecipes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/MyRecipes/styles.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Recipe/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Recipe/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Recipe/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Recipe/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/RecipeForm/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RecipeForm/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/RecipeForm/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RecipeForm/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Warning/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Warning/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Warning/styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +107,7 @@
       <workItem from="1585092562396" duration="13290000" />
       <workItem from="1585140411260" duration="66000" />
       <workItem from="1585140497667" duration="19071000" />
-      <workItem from="1585170973059" duration="4478000" />
+      <workItem from="1585170973059" duration="9839000" />
     </task>
     <servers />
   </component>
@@ -142,22 +127,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584907144437" />
-    <state width="1344" height="316" key="GridCell.Tab.0.bottom" timestamp="1585171170071">
+    <state width="1344" height="316" key="GridCell.Tab.0.bottom" timestamp="1585179969713">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="316" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585171170071" />
-    <state width="1344" height="316" key="GridCell.Tab.0.center" timestamp="1585171170071">
+    <state width="1344" height="316" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585179969713" />
+    <state width="1344" height="316" key="GridCell.Tab.0.center" timestamp="1585179969713">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="316" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585171170071" />
-    <state width="1344" height="316" key="GridCell.Tab.0.left" timestamp="1585171170070">
+    <state width="1344" height="316" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585179969713" />
+    <state width="1344" height="316" key="GridCell.Tab.0.left" timestamp="1585179969713">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="316" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585171170070" />
-    <state width="1344" height="316" key="GridCell.Tab.0.right" timestamp="1585171170071">
+    <state width="1344" height="316" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585179969713" />
+    <state width="1344" height="316" key="GridCell.Tab.0.right" timestamp="1585179969713">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="316" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585171170071" />
+    <state width="1344" height="316" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585179969713" />
     <state width="1344" height="514" key="GridCell.Tab.1.bottom" timestamp="1585002551761">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -1,6 +1,7 @@
 import React, {useState, useContext, useEffect} from 'react'
 import {useHistory} from 'react-router-dom'
 import {toast} from 'react-toastify'
+import PropTypes from 'prop-types'
 
 import 'react-toastify/dist/ReactToastify.css'
 
@@ -72,4 +73,19 @@ export default function Login({isAuthed}) {
       </Form>
     </Container>
   )
+}
+
+Login.propTypes = {
+  isAuthed: PropTypes.shape({
+    id: PropTypes.number,
+    name: PropTypes.string,
+    image: PropTypes.string,
+    email: PropTypes.number,
+    token: PropTypes.string,
+    user: PropTypes.number,
+  }),
+}
+
+Login.defaultProps = {
+  isAuthed: false,
 }

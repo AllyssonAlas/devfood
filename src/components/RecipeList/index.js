@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import {Link, useHistory} from 'react-router-dom'
 import {FaTrashAlt, FaPencilAlt, FaSpinner} from 'react-icons/fa'
+import PropTypes from 'prop-types'
 
 import api from '../../services/api'
 
@@ -43,7 +44,7 @@ export default function RecipeList({recipes, owner}) {
           <strong title={recipe.title}>{recipe.title}</strong>
           <div>
             <em>Criado por {recipe.user.name}</em>
-            <p>{recipe.category.name} </p>
+            <p>{recipe.category.name}</p>
           </div>
           <div>
             <p>{recipe.description}</p>
@@ -65,4 +66,32 @@ export default function RecipeList({recipes, owner}) {
       ))}
     </Container>
   )
+}
+
+RecipeList.propTypes = {
+  recipes: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number,
+      title: PropTypes.string,
+      description: PropTypes.string,
+      category: PropTypes.shape({
+        id: PropTypes.number,
+        name: PropTypes.string,
+        image: PropTypes.string,
+      }),
+      user: PropTypes.shape({
+        id: PropTypes.number,
+        name: PropTypes.string,
+        image: PropTypes.string,
+        email: PropTypes.string,
+        token: PropTypes.string,
+        user: PropTypes.number,
+      }),
+    }),
+  ).isRequired,
+  owner: PropTypes.bool,
+}
+
+RecipeList.defaultProps = {
+  owner: false,
 }

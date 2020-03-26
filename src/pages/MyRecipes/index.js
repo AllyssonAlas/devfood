@@ -37,7 +37,7 @@ export default function MyRecipes() {
   return (
     <Container>
       {loading ? (
-        <h1> arregando</h1>
+        <h1>Carregando</h1>
       ) : (
         <>
           <h1>Minhas Receitas</h1>

@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react'
 import {useHistory} from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 import Container from '../../components/Container'
 import Button from '../../components/Button'
@@ -23,4 +24,8 @@ export default function Warning({isAuthed}) {
       <Button title={'Página de login'} onClick={() => history.push('/')} />
     </Container>
   )
+}
+
+Warning.propTypes = {
+  isAuthed: PropTypes.bool.isRequired,
 }

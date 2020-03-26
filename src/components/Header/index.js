@@ -1,6 +1,7 @@
 import React, {useContext} from 'react'
 import {NavLink} from 'react-router-dom'
 import {GoSignOut} from 'react-icons/go'
+import PropTypes from 'prop-types'
 
 import px2vw from '../../utils/px2vw'
 
@@ -41,4 +42,15 @@ export default function Header({user}) {
       )}
     </Container>
   )
+}
+
+Header.propTypes = {
+  user: PropTypes.shape({
+    id: PropTypes.number,
+    name: PropTypes.string,
+    image: PropTypes.string,
+    email: PropTypes.number,
+    token: PropTypes.string,
+    user: PropTypes.number,
+  }).isRequired,
 }
