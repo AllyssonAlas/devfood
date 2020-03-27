@@ -5,12 +5,11 @@ import px2vw from '../../utils/px2vw'
 const Container = styled.div`
   align-items: center;
   background-color: rgb(220, 220, 220, 1);
-  border-radius: 0.8rem;
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: center;
+  justify-content: ${props => (props.bareContent ? 'space-evenly' : 'center')};
   height: 100%;
   padding: 2rem;
   width: 100%;

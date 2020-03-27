@@ -14,7 +14,7 @@ function App() {
     <UserProvider>
       <Routes />
       <GlobalStyles />
-      <ToastContainer position={'top-left'} autoClose={3000} />
+      <ToastContainer position={'top-left'} autoClose={3000} style={{fontSize: 14}} />
     </UserProvider>
   )
 }

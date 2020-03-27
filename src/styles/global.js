@@ -11,11 +11,11 @@ export default createGlobalStyle`
  }
 
   html, body, #root {
+    display: flex;
+    flex: 1;
     font-size: ${px2vw(20)};
     min-height: 100%;
     padding-top: 1.8rem;
-    display: flex;
-    flex: 1;
 
     @media (max-width: 768px) {
       padding-top: 2.2rem;
@@ -30,15 +30,15 @@ export default createGlobalStyle`
     }
   }
 
-   body, input, button, select, textarea {
+  body, input, button, select, textarea {
     font-family: 'Baloo Thambi 2', Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
   }
 
-   @media (max-width: 768px) {
-       input, button, select, textarea {
-        font-size: 2rem;
-      }
+  @media (max-width: 768px) {
+    input, button, select, textarea {
+      font-size: 2rem;
     }
+  }
 
 `

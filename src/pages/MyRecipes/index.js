@@ -1,5 +1,6 @@
 import React, {useContext, useEffect, useState} from 'react'
 import {useHistory} from 'react-router-dom'
+import {toast} from 'react-toastify'
 
 import {store} from '../../components/UserProvider'
 import Loading from '../../components/Loading'
@@ -8,7 +9,6 @@ import Container from '../../components/Container'
 import RecipeList from '../../components/RecipeList'
 
 import api from '../../services/api'
-import {toast} from 'react-toastify'
 
 export default function MyRecipes() {
   const [loading, setLoading] = useState(true)
@@ -43,11 +43,11 @@ export default function MyRecipes() {
   }
 
   return (
-    <Container>
-      {!loading && userRecipes.length === 0 ? (
+    <Container bareContent={userRecipes.length === 0}>
+      {userRecipes.length === 0 ? (
         <>
           <h1>Você não tem receitas cadastradas</h1>
-          <Button title={'Cadastrar nova receita'} onClick={() => history.push('recipeForm')} />
+          <Button title={'Nova receita'} onClick={() => history.push('recipeForm')} />
         </>
       ) : (
         <>

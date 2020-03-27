@@ -56,7 +56,7 @@ export default function Recipe({match}) {
 
   if (!loading && !recipe) {
     return (
-      <Container>
+      <Container bareContent>
         <h1>Não foi possivel achar receita</h1>
         <Button title={'Voltar'} onClick={() => history.goBack()} />
       </Container>

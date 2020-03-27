@@ -15,11 +15,11 @@ export default function Warning({isAuthed}) {
   }, [isAuthed])
 
   return (
-    <Container>
+    <Container bareContent>
       <h1>
-        Para acessar esse conteúdo você precisa estar logado
+        É necessário está logado para acessar
         <br />
-        ou conteúdo não existe
+        conteúdo ou conteúdo não existe
       </h1>
       <Button title={'Página de login'} onClick={() => history.push('/')} />
     </Container>

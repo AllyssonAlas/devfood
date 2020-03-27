@@ -8,18 +8,18 @@ export const RecipeCard = styled.div`
   color: rgba(20, 116, 75);
   display: flex;
   flex-direction: column;
+  height: 100%;
   min-height: ${px2vw(450)};
   padding: 1rem;
   width: ${px2vw(1200)};
-  height: 100%;
   word-break: break-all;
 
   div {
     align-items: center;
-    height: ${px2vw(40)};
-    display: flex;
-    justify-content: space-between;
     border-bottom: rgba(20, 116, 75) solid 0.1rem;
+    display: flex;
+    height: ${px2vw(40)};
+    justify-content: space-between;
 
     @media (max-width: 768px) {
       height: ${px2vw(60)};
@@ -36,17 +36,17 @@ export const RecipeCard = styled.div`
   }
 
   strong {
+    align-self: center;
     color: rgba(255, 115, 0, 1);
     font-size: 2rem;
     margin: 1rem 0;
-    align-self: center;
   }
 
   strong + div {
     align-items: flex-start;
-    height: 100%;
     border: 0;
     font-size: 1.5rem;
+    height: 100%;
     text-align: justify;
   }
 

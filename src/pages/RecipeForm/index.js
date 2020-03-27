@@ -49,13 +49,7 @@ export default function RecipeForm({match}) {
         user: state.user.id,
       }
 
-      const submitedRecipe = id
-        ? await api.put(`/recipe/${id}/`, data, {
-            headers: {
-              Authorization: `Token ${state.user.token}`,
-            },
-          })
-        : await api.post('/recipe/', data)
+      const submitedRecipe = id ? await api.put(`/recipe/${id}/`, data) : await api.post('/recipe/', data)
 
       if (submitedRecipe && id) {
         toast.success('Receita editada com sucesso')

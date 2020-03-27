@@ -21,12 +21,12 @@ export const DropDownMenu = styled.aside`
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: ${px2vw(600)};
-    right: ${px2vw(25)};
+    justify-content: space-between;
     padding: 1.2rem;
     position: absolute;
     top: ${px2vw(130)};
+    right: ${px2vw(25)};
     width: ${px2vw(450)};
   }
 
@@ -81,6 +81,7 @@ export const Container = styled.header`
     span {
       font-size: 1.5rem;
       color: rgba(20, 116, 75, 1);
+
       @media (max-width: 768px) {
         font-size: 4rem;
       }
@@ -128,8 +129,8 @@ export const Container = styled.header`
       display: flex;
       height: ${px2vw(40)};
       justify-content: center;
-      padding-top: 0.5rem;
       margin: 0;
+      padding-top: 0.5rem;
       width: ${px2vw(40)};
     }
   }

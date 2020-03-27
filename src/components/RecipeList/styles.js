@@ -66,8 +66,8 @@ export const RecipeCard = styled.li`
     flex-direction: row;
     height: 2rem;
     justify-content: space-between;
-    max-width: ${px2vw(1120)};
     margin-bottom: 1rem;
+    max-width: ${px2vw(1120)};
     padding-right: 0.2rem;
 
     @media (min-width: 768px) {
