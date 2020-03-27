@@ -27,7 +27,7 @@ export const DropDownMenu = styled.aside`
     padding: 1.2rem;
     position: absolute;
     top: ${px2vw(130)};
-    width: ${px2vw(420)};
+    width: ${px2vw(450)};
   }
 
   strong {

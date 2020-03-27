@@ -21,11 +21,9 @@ export default function Recipe({match}) {
   const {state} = useContext(store)
   const history = useHistory()
 
-  /* eslint-disable camelcase */
-
-  async function handleDelete(id_recipe) {
+  async function handleDelete(id) {
     try {
-      const deleteRequest = await api.delete(`/recipe/${id_recipe}`)
+      const deleteRequest = await api.delete(`/recipe/${id}`)
 
       if (deleteRequest) {
         history.goBack()
@@ -37,17 +35,32 @@ export default function Recipe({match}) {
   }
 
   useEffect(() => {
-    async function getRecipe(id_receita) {
-      const recipeRequest = await api.get(`/recipe/${id_receita}`)
-      await setRecipe(recipeRequest.data)
-      setLoading(false)
+    async function getRecipe(id) {
+      try {
+        const recipeRequest = await api.get(`/recipe/${id}`)
+        if (recipeRequest) {
+          setRecipe(recipeRequest.data)
+        }
+      } catch (err) {
+        setRecipe(null)
+      } finally {
+        setLoading(false)
+      }
     }
     getRecipe(recipeId)
   }, [])
-  /* eslint-enable camelcase */
 
   if (loading) {
     return <Loading />
+  }
+
+  if (!loading && !recipe) {
+    return (
+      <Container>
+        <h1>Não foi possivel achar receita</h1>
+        <Button title={'Voltar'} onClick={() => history.goBack()} />
+      </Container>
+    )
   }
 
   return (
@@ -56,9 +69,10 @@ export default function Recipe({match}) {
       <div>
         <RecipeCard>
           <div>
-            <strong>Criado por {recipe.user.name}</strong>
-            <strong>{recipe.category.name}</strong>
+            <em>Criado por {recipe.user.name}</em>
+            <em>{recipe.category.name}</em>
           </div>
+          <strong>Descrição</strong>
           <div>
             <p>{recipe.description}</p>
           </div>

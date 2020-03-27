@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import {Link, useHistory} from 'react-router-dom'
 import {FaTrashAlt, FaPencilAlt, FaSpinner} from 'react-icons/fa'
+import {toast} from 'react-toastify'
 import PropTypes from 'prop-types'
 
 import api from '../../services/api'
@@ -9,29 +10,29 @@ import {Container, RecipeCard, IconButton} from './styles'
 
 export default function RecipeList({recipes, owner}) {
   const [recipeList, setRecipeList] = useState([])
+  const [recipeSelected, setRecipeSelected] = useState(null)
   const [loading, setLoading] = useState(false)
   const history = useHistory()
 
-  /* eslint-disable camelcase */
-  async function handleDelete(id_recipe) {
+  async function handleDelete(recipeID) {
     setLoading(true)
+    setRecipeSelected(recipeID)
     try {
-      await api.delete(`/recipe/${id_recipe}`)
+      await api.delete(`/recipe/${recipeID}`)
 
-      const recipeIndex = recipes.findIndex(r => r.id === id_recipe)
+      const recipeIndex = recipes.findIndex(r => r.id === recipeID)
 
       if (recipeIndex >= 0) {
         recipes.splice(recipeIndex, 1)
       }
-
+      toast.success('Receita apagada com sucesso')
       setRecipeList(recipes)
     } catch (err) {
-      console.log(err)
+      toast.error('Impossível apagar receita')
     } finally {
       setLoading(false)
     }
   }
-  /* eslint-enable camelcase */
 
   useEffect(() => {
     setRecipeList(recipes)
@@ -56,8 +57,12 @@ export default function RecipeList({recipes, owner}) {
                 <IconButton onClick={() => history.push(`/recipeForm/${recipe.id}`)}>
                   <FaPencilAlt />
                 </IconButton>
-                <IconButton loading={loading} onClick={() => handleDelete(recipe.id)}>
-                  {loading ? <FaSpinner /> : <FaTrashAlt />}
+                <IconButton
+                  loading={loading}
+                  selected={recipeSelected === recipe.id}
+                  onClick={() => handleDelete(recipe.id)}
+                >
+                  {loading && recipeSelected === recipe.id ? <FaSpinner /> : <FaTrashAlt />}
                 </IconButton>
               </div>
             )}

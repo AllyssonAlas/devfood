@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import {toast} from 'react-toastify'
 
 import Container from '../../components/Container'
 import Loading from '../../components/Loading'
@@ -12,10 +13,17 @@ export default function Home() {
 
   useEffect(() => {
     async function getRecipes() {
-      const recipesRequest = await api.get('/recipe')
-      setRecipes(recipesRequest.data)
-
-      setLoading(false)
+      try {
+        const recipesRequest = await api.get('/recipe')
+        if (recipesRequest) {
+          setRecipes(recipesRequest.data)
+        }
+      } catch (err) {
+        toast.error('Não foi possível encontrar receitas')
+        setRecipes(null)
+      } finally {
+        setLoading(false)
+      }
     }
 
     getRecipes()

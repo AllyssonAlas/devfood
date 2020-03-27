@@ -9,18 +9,24 @@ export const Form = styled.form`
   border-radius: 2rem;
   display: flex;
   flex-direction: column;
-  height: ${px2vw(375)};
+  height: ${px2vw(400)};
   margin: 0 auto;
-  width: ${px2vw(600)};
+  padding-top: 1rem;
+  width: ${px2vw(800)};
 
-  @media (min-width: 768px) {
-    height: ${px2vw(350)};
+  @media (max-width: 768px) {
+    height: ${px2vw(600)};
+    width: ${px2vw(1200)};
   }
 
   span {
     font-size: 1.2rem;
     font-weight: bold;
     margin: 1rem 0;
+
+    @media (max-width: 768px) {
+      font-size: 2.4rem;
+    }
   }
 
   input {
@@ -31,9 +37,18 @@ export const Form = styled.form`
     margin-bottom: ${px2vw(10)};
     padding: 0 ${px2vw(12)};
     width: ${px2vw(350)};
+
+    @media (max-width: 768px) {
+      height: ${px2vw(70)};
+      width: ${px2vw(520)};
+    }
   }
 
   input ~ input {
-    margin-bottom: ${px2vw(40)};
+    margin-bottom: 2rem;
+
+    @media (max-width: 768px) {
+      margin-bottom: 3.5rem;
+    }
   }
 `

@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import px2vw from '../../utils/px2vw'
+
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
@@ -14,6 +16,11 @@ export const Form = styled.form`
     margin: 1rem 0;
     min-height: 3.5rem;
     padding: 1rem 1.5rem;
+    width: ${px2vw(800)};
+
+    @media (max-width: 768px) {
+      width: ${px2vw(1200)};
+    }
   }
 
   h2 {
@@ -23,7 +30,7 @@ export const Form = styled.form`
 
   textarea {
     height: 15rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     resize: none;
   }
 

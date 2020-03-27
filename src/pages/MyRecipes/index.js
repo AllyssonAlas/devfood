@@ -1,28 +1,36 @@
 import React, {useContext, useEffect, useState} from 'react'
+import {useHistory} from 'react-router-dom'
 
 import {store} from '../../components/UserProvider'
 import Loading from '../../components/Loading'
+import Button from '../../components/Button'
 import Container from '../../components/Container'
 import RecipeList from '../../components/RecipeList'
 
 import api from '../../services/api'
+import {toast} from 'react-toastify'
 
 export default function MyRecipes() {
   const [loading, setLoading] = useState(true)
   const [userRecipes, setUserRecipes] = useState([])
+  const history = useHistory()
   const {state} = useContext(store)
 
   useEffect(() => {
     async function getUserRecipes() {
-      const {id} = state.user
+      try {
+        const {id} = state.user
 
-      const recipesRequest = await api.get('/recipe', {params: {user: id}})
+        const recipesRequest = await api.get('/recipe', {params: {user: id}})
 
-      if (recipesRequest) {
-        setUserRecipes(recipesRequest.data)
+        if (recipesRequest) {
+          setUserRecipes(recipesRequest.data)
+        }
+      } catch (e) {
+        toast.error('Não foi possível encontrar receitas')
+      } finally {
+        setLoading(false)
       }
-
-      setLoading(false)
     }
 
     if (state.user !== undefined) {
@@ -36,8 +44,11 @@ export default function MyRecipes() {
 
   return (
     <Container>
-      {loading ? (
-        <h1>Carregando</h1>
+      {!loading && userRecipes.length === 0 ? (
+        <>
+          <h1>Você não tem receitas cadastradas</h1>
+          <Button title={'Cadastrar nova receita'} onClick={() => history.push('recipeForm')} />
+        </>
       ) : (
         <>
           <h1>Minhas Receitas</h1>

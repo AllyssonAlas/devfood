@@ -3,8 +3,6 @@ import {useHistory, useLocation} from 'react-router-dom'
 import {toast} from 'react-toastify'
 import PropTypes from 'prop-types'
 
-import 'react-toastify/dist/ReactToastify.css'
-
 import {store} from '../../components/UserProvider'
 import Container from '../../components/Container'
 import Button from '../../components/Button'
@@ -51,11 +49,13 @@ export default function RecipeForm({match}) {
         user: state.user.id,
       }
 
-      const id_recipe = id || null
-
-      console.log(id_recipe, data)
-
-      const submitedRecipe = id ? await api.put(`/recipe/${id_recipe}`, data) : await api.post('/recipe/', data)
+      const submitedRecipe = id
+        ? await api.put(`/recipe/${id}/`, data, {
+            headers: {
+              Authorization: `Token ${state.user.token}`,
+            },
+          })
+        : await api.post('/recipe/', data)
 
       if (submitedRecipe && id) {
         toast.success('Receita editada com sucesso')
@@ -73,7 +73,7 @@ export default function RecipeForm({match}) {
         })
       }
     } catch (err) {
-      console.log(err)
+      toast.error('Não foi possível cadastrar receita')
     } finally {
       setLoading(false)
     }
@@ -136,7 +136,12 @@ export default function RecipeForm({match}) {
           ))}
         </select>
         <h2>Descrição</h2>
-        <textarea id={'description'} onChange={e => handleSetFormField(e.target)} value={form.description} />
+        <textarea
+          id={'description'}
+          onChange={e => handleSetFormField(e.target)}
+          value={form.description}
+          maxLength={6000}
+        />
         <Button loading={loading} title={id ? 'Editar Receita' : 'Criar nova receita'} type={'submit'} />
       </Form>
     </Container>

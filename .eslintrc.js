@@ -18,7 +18,6 @@ module.exports = {
   plugins: ['react'],
   rules: {
     semi: 'off',
-    camelcase: 'warn',
     'react/jsx-filename-extension': ['off', {extensions: ['.js', '.jsx']}],
     'react/jsx-curly-brace-presence': 0,
     'no-param-reassign': 'off',

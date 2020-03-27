@@ -3,8 +3,6 @@ import {useHistory} from 'react-router-dom'
 import {toast} from 'react-toastify'
 import PropTypes from 'prop-types'
 
-import 'react-toastify/dist/ReactToastify.css'
-
 import Container from '../../components/Container'
 import Button from '../../components/Button'
 import {authenticate} from '../../services/auth'
@@ -26,9 +24,7 @@ export default function Login({isAuthed}) {
 
     try {
       if (!username || !password) {
-        return toast.error('Há campos que precisam ser preenchidos corretamente.', {
-          position: toast.POSITION.TOP_CENTER,
-        })
+        return toast.error('Preencha os campos corretamente')
       }
 
       const user = await authenticate(username, password)
@@ -41,9 +37,7 @@ export default function Login({isAuthed}) {
 
       return history.push('home')
     } catch (err) {
-      return toast.error('Usuário não existe', {
-        position: 'top-center',
-      })
+      return toast.error('Usuário não existe')
     } finally {
       setLoading(false)
     }

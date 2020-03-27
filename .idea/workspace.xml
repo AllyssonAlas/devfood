@@ -2,10 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e4e0d2f-fdeb-40a9-bcbd-a82ffd50127c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Container/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Container/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RecipeList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecipeList/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RecipeList/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecipeList/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Login/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MyRecipes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MyRecipes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Recipe/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Recipe/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Recipe/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Recipe/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/RecipeForm/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RecipeForm/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/RecipeForm/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RecipeForm/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.js" afterDir="false" />
@@ -105,6 +117,7 @@
       <workItem from="1585140497667" duration="19071000" />
       <workItem from="1585170973059" duration="23494000" />
       <workItem from="1585235051935" duration="3291000" />
+      <workItem from="1585262088079" duration="6748000" />
     </task>
     <servers />
   </component>
@@ -124,22 +137,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584907144437" />
-    <state width="1344" height="316" key="GridCell.Tab.0.bottom" timestamp="1585235591293">
+    <state width="645" height="306" key="GridCell.Tab.0.bottom" timestamp="1585265422318">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="316" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585235591293" />
-    <state width="1344" height="316" key="GridCell.Tab.0.center" timestamp="1585235591293">
+    <state width="645" height="306" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585265422318" />
+    <state width="645" height="306" key="GridCell.Tab.0.center" timestamp="1585265422317">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="316" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585235591293" />
-    <state width="1344" height="316" key="GridCell.Tab.0.left" timestamp="1585235591293">
+    <state width="645" height="306" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585265422317" />
+    <state width="645" height="306" key="GridCell.Tab.0.left" timestamp="1585265422317">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="316" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585235591293" />
-    <state width="1344" height="316" key="GridCell.Tab.0.right" timestamp="1585235591293">
+    <state width="645" height="306" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585265422317" />
+    <state width="645" height="306" key="GridCell.Tab.0.right" timestamp="1585265422318">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="316" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585235591293" />
+    <state width="645" height="306" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585265422318" />
     <state width="1344" height="514" key="GridCell.Tab.1.bottom" timestamp="1585002551761">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -192,14 +205,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584907256270" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1585156264623">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1585260698797">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1585156264623" />
-    <state x="100" y="100" width="483" height="528" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1585157067940">
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1585260698797" />
+    <state x="100" y="100" width="483" height="528" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1585244312736">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="100" y="100" width="483" height="528" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1585157067940" />
+    <state x="100" y="100" width="483" height="528" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1585244312736" />
     <state x="490" y="274" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585001869174">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -220,9 +233,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1585145680358" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1585235962971">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1585243803747">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1585235962971" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1585243803747" />
   </component>
 </project>

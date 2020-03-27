@@ -24,6 +24,11 @@ export const Container = styled.button.attrs(props => ({
   transition: all 0.2s;
   width: ${px2vw(300)};
 
+  @media (max-width: 768px) {
+    height: ${px2vw(70)};
+    width: ${px2vw(450)};
+  }
+
   &:hover {
     transform: translateY(-0.3rem);
   }

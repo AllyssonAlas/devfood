@@ -13,10 +13,12 @@ export default createGlobalStyle`
   html, body, #root {
     font-size: ${px2vw(20)};
     min-height: 100%;
-    padding-top: 1.2rem;
+    padding-top: 1.8rem;
+    display: flex;
+    flex: 1;
 
     @media (max-width: 768px) {
-      padding-top: 2.5rem;
+      padding-top: 2.2rem;
     }
 
     @media (min-width: 768px) {
@@ -32,4 +34,11 @@ export default createGlobalStyle`
     font-family: 'Baloo Thambi 2', Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
   }
+
+   @media (max-width: 768px) {
+       input, button, select, textarea {
+        font-size: 2rem;
+      }
+    }
+
 `

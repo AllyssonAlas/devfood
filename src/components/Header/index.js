@@ -41,7 +41,7 @@ export default function Header({user}) {
               <strong>{user.name}</strong>
               <NavLink to={'/home'}>Receitas </NavLink>
               <NavLink to={'/myRecipes'}>Minhas Receitas</NavLink>
-              <NavLink to={'/recipeForm'}>Adcionar Receita</NavLink>
+              <NavLink to={'/recipeForm'}>Adicionar Receita</NavLink>
               <NavLink to={'/'} onClick={handleLogout}>
                 Sair
               </NavLink>
@@ -55,7 +55,7 @@ export default function Header({user}) {
         <div>
           <NavLink to={'/home'}>Receitas </NavLink>
           <NavLink to={'/myRecipes'}>Minhas Receitas</NavLink>
-          <NavLink to={'/recipeForm'}>Adcionar Receita</NavLink>
+          <NavLink to={'/recipeForm'}>Adicionar Receita</NavLink>
         </div>
 
         <div>

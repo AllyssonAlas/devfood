@@ -27,6 +27,7 @@ export const RecipeCard = styled.li`
   justify-content: space-around;
   height: ${px2vw(450)};
   padding: 1.5rem;
+  width: ${px2vw(1120)};
   max-width: ${px2vw(1120)};
 
   @media (min-width: 768px) {
@@ -84,6 +85,7 @@ export const RecipeCard = styled.li`
     overflow: hidden;
     text-align: justify;
     text-overflow: ellipsis;
+    word-break: break-all;
 
     p {
       display: -webkit-box;
@@ -151,7 +153,7 @@ const rotate = keyframes`
 `
 
 export const IconButton = styled.button.attrs(props => ({
-  disabled: props.loading,
+  disabled: props.loading && props.selected,
   type: 'button',
 }))`
   background-color: rgba(255, 115, 0, 1);
@@ -191,6 +193,7 @@ export const IconButton = styled.button.attrs(props => ({
 
   ${props =>
     props.loading &&
+    props.selected &&
     css`
       svg {
         animation: ${rotate} 2s linear infinite;
